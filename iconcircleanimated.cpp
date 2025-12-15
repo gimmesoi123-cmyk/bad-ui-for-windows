@@ -70,6 +70,10 @@ int main() {
         }
 
         Sleep(0);  // ~60 FPS animation
+
+        if (GetAsyncKeyState(VK_ESCAPE)) {
+            break;
+        }
     }
 
     return 0;
